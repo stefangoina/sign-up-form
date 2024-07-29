@@ -104,6 +104,12 @@ form > input {
   width: 200px;
   border-radius: 2px;
   margin-top: 5px;
+  border: 1px solid #a3a3ab;
+}
+.first-col > input:focus,
+.second-col > input:focus {
+  border: 2px solid rgb(235, 10, 10);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 label {
   font-size: 1.5rem;
@@ -128,7 +134,7 @@ button {
   margin-bottom: 15px;
   font-size: 2rem;
   padding: 15px;
-  background-color: rgba(18, 90, 18, 0.706);
+  background-color: #596d48;
   border-radius: 4px;
 }
 .auth > p {
@@ -136,7 +142,7 @@ button {
 }
 .login {
   text-decoration: none;
-  color: rgba(18, 90, 18, 0.827);
+  color: #596d48;
 }
 .login:hover {
   text-decoration: underline;
@@ -144,4 +150,7 @@ button {
 .hunting {
   margin-left: 30px;
   margin-top: 40px;
+}
+input[type="password"]:invalid {
+  border: 2px solid red;
 }
